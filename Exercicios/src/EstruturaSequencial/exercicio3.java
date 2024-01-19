@@ -1,4 +1,5 @@
 //Faça um Programa que peça dois números e imprima a soma.
+package EstruturaSequencial;
 
 import java.util.Scanner;
 

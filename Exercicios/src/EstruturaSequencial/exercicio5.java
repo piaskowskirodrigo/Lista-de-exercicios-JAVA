@@ -1,4 +1,5 @@
 //Faça um Programa que converta metros para centímetros.
+package EstruturaSequencial;
 
 import java.util.Scanner;
 
