@@ -13,11 +13,42 @@ h. O novo salário, após o aumento.*/
 
 package EstruturaDecisao;
 
+import java.util.Scanner;
+
 public class exercicio28 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe seu salario: ");
+		double salario = scan.nextDouble();
+		double salario20 = salario * 0.2;
+		double salario15 = salario * 0.15;
+		double salario10 = salario * 0.10;
+		double salario5 = salario * 0.05;
+		
+		if (salario <= 280) {
+			System.out.println("Seu salario atual e: "+salario);
+			System.out.println("Voce ganhou um aumento de 20%");
+			System.out.println("O valor do aumento e de: "+ salario20);
+			System.out.println("Seu novo salario e de: "+(salario + salario20));
+		}else if (salario > 280 && salario <700) {
+			System.out.println("Seu salario atual e: "+salario);
+			System.out.println("Voce ganhou um aumento de 15%");
+			System.out.println("O valor do aumento e de: "+ salario15);
+			System.out.println("Seu novo salario e de: "+(salario + salario15));
+		}else if (salario >= 700 && salario <1500) {
+			System.out.println("Seu salario atual e: "+salario);
+			System.out.println("Voce ganhou um aumento de 10%");
+			System.out.println("O valor do aumento e de: "+ salario10);
+			System.out.println("Seu novo salario e de: "+(salario + salario10));
+		}else if (salario >= 1500) {
+			System.out.println("Seu salario atual e: "+salario);
+			System.out.println("Voce ganhou um aumento de 5%");
+			System.out.println("O valor do aumento e de: "+ salario5);
+			System.out.println("Seu novo salario e de: "+(salario + salario5));
+		}
+		
+		
 	}
 
 }
