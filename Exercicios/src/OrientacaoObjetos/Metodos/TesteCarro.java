@@ -17,6 +17,9 @@ public class TesteCarro {
 		
 		van.exibirAutonomia(); //boas praticas: sempre comecar o metodo com algum verbo.
 		
+		double autonomia = van.obterAutonomia();
+		System.out.println("A autonomia do carro e: "+autonomia);
+		
 		
 
 	}
