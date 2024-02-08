@@ -8,7 +8,7 @@ package VetoresMatrizes;
 
 import java.util.Scanner;
 
-public class Exercicio17 {
+public class Exercicio16 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
