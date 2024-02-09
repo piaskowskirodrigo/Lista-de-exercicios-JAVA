@@ -1,4 +1,4 @@
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 

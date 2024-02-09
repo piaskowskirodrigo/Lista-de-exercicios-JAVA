@@ -4,7 +4,7 @@ vetor que são inferiores a 15; b) a quantidade de elementos
 armazenados no vetor que são iguais a 15; e c) a média dos
 elementos armazenados no vetor que são superiores a 15.*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 

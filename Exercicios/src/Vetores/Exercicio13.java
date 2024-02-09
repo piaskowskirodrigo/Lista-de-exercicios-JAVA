@@ -2,7 +2,7 @@
 que determine a soma dos elementos armazenados neste vetor que
 são múltiplos de 5.*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 

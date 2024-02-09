@@ -4,7 +4,7 @@ deverão estar invertidos, ou seja, o primeiro elemento de A passa a
 ser o último de B, o segundo elemento de A passa a ser o penúltimo
 de B e assim por diante*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Iterator;
 import java.util.Scanner;

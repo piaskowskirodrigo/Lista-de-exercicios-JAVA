@@ -4,7 +4,7 @@ menos um elemento do vetor não for par o processo de repetição para
 percorrer os elementos do vetor deve ser encerrado, como sugestão:
 utilize uma variável do tipo flag para atingir este propósito.*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 

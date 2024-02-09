@@ -1,23 +1,23 @@
-/*Criar um vetor A com 5 elementos inteiros. Construir um vetor B de
-mesmo tipo e tamanho e com os "mesmos" elementos do vetor A, ou
-seja, B[i] = A[i].*/
+/*Criar um vetor A com 8 elementos inteiros. Construir um vetor B de
+mesmo tipo e tamanho e com os elementos do vetor A multiplicados
+por 2, ou seja: B[i] = A[i] * 2.*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 
-public class Exerxicio01 {
+public class Exercicio02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		int [] vetorA = new int[5];
+		int [] vetorA = new int[8];
 		int [] vetorB = new int[vetorA.length];
 		
 		for(int i=0; i<vetorA.length;i++) {
 			System.out.println("Entre com o valor da posicao: " +i);
 			vetorA[i] = scan.nextInt();
-			vetorB[i] = vetorA[i];
+			vetorB[i] = vetorA[i] * 2;
 		}
 		/*for(int i=0; i<vetorB.length;i++) {
 			vetorB[i] = vetorA[i];
@@ -34,4 +34,7 @@ public class Exerxicio01 {
 	}
 	
 	}
+
+	
+
 }

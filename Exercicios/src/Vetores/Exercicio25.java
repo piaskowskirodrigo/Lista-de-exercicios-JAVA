@@ -3,7 +3,7 @@ mesmo tipo e tamanho, obedecendo as seguintes regras de formação:
 a) Bi deverá receber 1 quando Ai for par; b) Bi deverá receber 0
 quando Ai for ímpar*/
 
-package VetoresMatrizes;
+package Vetores;
 
 import java.util.Scanner;
 
