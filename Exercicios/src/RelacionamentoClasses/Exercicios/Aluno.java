@@ -1,18 +1,18 @@
 package RelacionamentoClasses.Exercicios;
 
 public class Aluno {
-	private String nomeAluno;
+	private String nome;
 	private String matricula;
-	private int nota1,nota2,nota3,nota4;
+	private double[] notas;
 	
 	public Aluno() {
 		// TODO Auto-generated constructor stub
 	}
-	public String getNomeAluno() {
-		return nomeAluno;
+	public String getNome() {
+		return nome;
 	}
-	public void setNomeAluno(String nomeAluno) {
-		this.nomeAluno = nomeAluno;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getMatricula() {
 		return matricula;
@@ -20,43 +20,43 @@ public class Aluno {
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
 	}
-	public int getNota1() {
-		return nota1;
+	public double[] getNotas() {
+		return notas;
 	}
-	public void setNota1(int nota1) {
-		this.nota1 = nota1;
-	}
-	public int getNota2() {
-		return nota2;
-	}
-	public void setNota2(int nota2) {
-		this.nota2 = nota2;
-	}
-	public int getNota3() {
-		return nota3;
-	}
-	public void setNota3(int nota3) {
-		this.nota3 = nota3;
-	}
-	public int getNota4() {
-		return nota4;
-	}
-	public void setNota4(int nota4) {
-		this.nota4 = nota4;
+	public void setNotas(double[] notas) {
+		this.notas = notas;
 	}
 	
-	public int calculaMedia() {
-		int media = (nota1+nota2+nota3+nota4)/4;
-		if (media >= 7) {
-			System.out.println("Aprovado");
-		}else {
-			System.out.println("Reprovado");
-		}
-		
-		return media;
-		
-	}
-
-
+public String obterInfo(){
+        
+        String info = "Nome Aluno = " + nome + "; ";
+        info += "Matricula = " + matricula + "; ";
+        info += "Notas: ";
+        
+        double soma = 0;
+        for (double nota : notas){
+            soma += nota;
+            info += nota + " ";
+        }
+        double media = soma/4;
+        info += "\n" + "Média = " + media + " - ";
+        if (media >= 7){
+            info += "Aprovado!";
+        } else {
+            info += "Reprovado!";
+        }
+                
+        return info;        
+    }
+    
+    public double obterMedia(){
+        double soma = 0;
+        for (double nota : notas){
+            soma += nota;
+        }
+        return soma/4;
+    }
 	
+	
+
 }
