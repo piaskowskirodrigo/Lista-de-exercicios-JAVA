@@ -1,6 +1,6 @@
 package Interfaces.Exercicio;
 
-public class Cubo extends Figura3D implements DimensaoSuperficial,DimensaoVolumetrica{
+public class Cubo extends Figura3D {
 	private int lado;
 
 	public int getLado() {
@@ -12,14 +12,14 @@ public class Cubo extends Figura3D implements DimensaoSuperficial,DimensaoVolume
 	}
 
 	@Override
-	public void calcularArea() {
-		// TODO Auto-generated method stub
+	public double calcularArea() {
+		return 6 * (lado*lado);
 		
 	}
 
 	@Override
-	public void calcularVolume() {
-		// TODO Auto-generated method stub
+	public double calcularVolume() {
+		return lado*lado*lado;
 		
 	}
 

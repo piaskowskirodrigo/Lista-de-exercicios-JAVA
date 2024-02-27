@@ -1,6 +1,6 @@
 package Interfaces.Exercicio;
 
-public class Quadrado extends Figura2D implements DimensaoSuperficial{
+public class Quadrado extends Figura2D {
 	private int lado;
 
 	public int getLado() {
@@ -12,8 +12,8 @@ public class Quadrado extends Figura2D implements DimensaoSuperficial{
 	}
 
 	@Override
-	public void calcularArea() {
-		// TODO Auto-generated method stub
+	public double calcularArea() {
+		return lado*lado;
 		
 	}
 

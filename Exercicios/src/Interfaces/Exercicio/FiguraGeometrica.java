@@ -1,6 +1,6 @@
 package Interfaces.Exercicio;
 
-public abstract class FiguraGeometrica {
+public abstract  class FiguraGeometrica {
 	private String nome;
 	private String cor;
 	

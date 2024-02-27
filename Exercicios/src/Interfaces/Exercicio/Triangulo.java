@@ -1,16 +1,17 @@
 package Interfaces.Exercicio;
 
-public class Triangulo extends Figura2D implements DimensaoSuperficial{
+public class Triangulo extends Figura2D {
 	
-	private double lado;
+	private double altura;
 	private double base;
 
-	public double getLado() {
-		return lado;
+
+	public double getAltura() {
+		return altura;
 	}
 
-	public void setLado(double lado) {
-		this.lado = lado;
+	public void setAltura(double altura) {
+		this.altura = altura;
 	}
 
 	public double getBase() {
@@ -22,8 +23,8 @@ public class Triangulo extends Figura2D implements DimensaoSuperficial{
 	}
 
 	@Override
-	public void calcularArea() {
-		// TODO Auto-generated method stub
+	public double calcularArea() {
+		return (altura*base)/2;
 		
 	}
 

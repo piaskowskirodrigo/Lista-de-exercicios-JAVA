@@ -1,6 +1,6 @@
 package Interfaces.Exercicio;
 
-public class Cilindro extends Figura3D implements DimensaoSuperficial,DimensaoVolumetrica{
+public class Cilindro extends Figura3D {
 	private int altura;
 	private double raio;
 
@@ -21,14 +21,19 @@ public class Cilindro extends Figura3D implements DimensaoSuperficial,DimensaoVo
 	}
 
 	@Override
-	public void calcularArea() {
-		// TODO Auto-generated method stub
+	public double calcularArea() {
+		double areaBase = Math.PI * (raio*raio);
+		double areaLetral = 2* Math.PI * raio * altura;
+		double areaTotal = (2*areaBase) + areaLetral;
+		
+		
+		return areaTotal;
 		
 	}
 
 	@Override
-	public void calcularVolume() {
-		// TODO Auto-generated method stub
+	public double calcularVolume() {
+		return Math.PI * (raio*raio) * altura;
 		
 	}
 

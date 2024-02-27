@@ -1,6 +1,6 @@
 package Interfaces.Exercicio;
 
-public class Circulo extends Figura2D implements DimensaoSuperficial{
+public class Circulo extends Figura2D {
 	private double raio;
 
 	public double getRaio() {
@@ -12,8 +12,8 @@ public class Circulo extends Figura2D implements DimensaoSuperficial{
 	}
 
 	@Override
-	public void calcularArea() {
-		// TODO Auto-generated method stub
+	public double calcularArea() {
+		return raio*raio*Math.PI;
 		
 	}
 
