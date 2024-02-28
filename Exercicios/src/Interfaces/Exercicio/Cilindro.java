@@ -1,4 +1,4 @@
-package Interfaces.Exercicio;
+/*package Interfaces.Exercicio;
 
 public class Cilindro extends Figura3D {
 	private int altura;
@@ -38,3 +38,4 @@ public class Cilindro extends Figura3D {
 	}
 
 }
+*/
