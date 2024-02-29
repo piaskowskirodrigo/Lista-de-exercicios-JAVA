@@ -1,20 +1,27 @@
 package Interfaces.Exercicio;
 
 public class Circulo extends Figura2D {
-	private double raio;
+    
+    private double raio;
 
-	public double getRaio() {
-		return raio;
-	}
+    /**
+     * @return the raio
+     */
+    public double getRaio() {
+        return raio;
+    }
 
-	public void setRaio(double raio) {
-		this.raio = raio;
-	}
+    /**
+     * @param raio the raio to set
+     */
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
 
-	@Override
-	public double calcularArea() {
-		return raio*raio*Math.PI;
-		
-	}
-
+    @Override
+    public double calcularArea() {
+        return (raio * raio) * Math.PI;
+    }
+    
+    
 }

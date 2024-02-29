@@ -1,5 +1,5 @@
 package Interfaces.Exercicio;
 
-public abstract class Figura3D extends FiguraGeometrica implements DimensaoSuperficial,DimensaoVolumetrica{
-
+public abstract class Figura3D extends FiguraGeometrica implements DimensaoSuperficial, DimensaoVolumetrica {
+    
 }

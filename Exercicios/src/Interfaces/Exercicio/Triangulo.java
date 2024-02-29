@@ -1,31 +1,42 @@
 package Interfaces.Exercicio;
 
 public class Triangulo extends Figura2D {
-	
-	private double altura;
-	private double base;
+    
+    private double base;
+    private double altura;
 
+    /**
+     * @return the base
+     */
+    public double getBase() {
+        return base;
+    }
 
-	public double getAltura() {
-		return altura;
-	}
+    /**
+     * @param base the base to set
+     */
+    public void setBase(double base) {
+        this.base = base;
+    }
 
-	public void setAltura(double altura) {
-		this.altura = altura;
-	}
+    /**
+     * @return the altura
+     */
+    public double getAltura() {
+        return altura;
+    }
 
-	public double getBase() {
-		return base;
-	}
+    /**
+     * @param altura the altura to set
+     */
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
 
-	public void setBase(double base) {
-		this.base = base;
-	}
-
-	@Override
-	public double calcularArea() {
-		return (altura*base)/2;
-		
-	}
-
+    @Override
+    public double calcularArea() {
+        return ((altura * base)/2);
+    }
+    
+    
 }

@@ -1,10 +1,10 @@
 package Interfaces.Exercicio;
 
-public class TesteFiguras {
-
-	public static void main(String[] args) {
-		
-		Quadrado f1 = new Quadrado();
+public class Teste {
+    
+    public static void main(String[] args) {
+        
+        Quadrado f1 = new Quadrado();
         f1.setLado(2);
         f1.setNome("Quadrado");
         
@@ -21,10 +21,10 @@ public class TesteFiguras {
         f4.setLado(3);
         f4.setNome("Cubo");
         
-      /*  Cilindro f5 = new Cilindro();
+        Cilindro f5 = new Cilindro();
         f5.setAltura(3);
         f5.setRaio(2);
-        f5.setNome("Cilindro");*/
+        f5.setNome("Cilindro");
         
         Piramide f6 = new Piramide();
         f6.setAltura(3);
@@ -34,14 +34,12 @@ public class TesteFiguras {
         f6.setBase(f1);
         f6.setNome("Piramide");
         
-        
-        //tentar utilizar o toString tbm.
         FiguraGeometrica[] figuras = new FiguraGeometrica[6];
         figuras[0] = f1;
         figuras[1] = f2;
         figuras[2] = f3;
         figuras[3] = f4;
-        /*figuras[4] = f5;*/
+        figuras[4] = f5;
         figuras[5] = f6;
         
         for (FiguraGeometrica figura : figuras){
@@ -63,7 +61,3 @@ public class TesteFiguras {
     }
     
 }
-
-	
-
-
