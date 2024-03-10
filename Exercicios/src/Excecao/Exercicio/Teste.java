@@ -78,6 +78,7 @@ public class Teste {
             System.out.println("1: Consultar contato");
             System.out.println("2: Adicionar contato");
             System.out.println("3: Sair");
+            System.out.println();
         
             try {
                 String entrada = scan.nextLine();
