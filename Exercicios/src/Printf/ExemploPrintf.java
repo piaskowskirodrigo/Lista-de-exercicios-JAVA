@@ -72,7 +72,7 @@ public class ExemploPrintf {
 			System.out.printf("%s %02d: total de R$%,10.2f%n", "Item", i+1, precos[i]);
 		}
 		
-		//Java.util.Formater
+	
 	}
 
 }
