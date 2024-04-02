@@ -42,6 +42,8 @@ public class TesteWrapper {
 		System.out.println(num18);
 		
 		System.out.println(num9 == num13); //== não funciona com wrappers - false
+		
+		//**************
 	}
 
 }
