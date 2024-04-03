@@ -31,7 +31,7 @@ public class Vetor {
 
 }*/
 	public boolean adiciona(String elemento) {
-		
+		this.aumentaCapacidade();
 		if (this.tamanho < this.elementos.length){
 			this.elementos[this.tamanho] = elemento;
 			this.tamanho++;
@@ -59,6 +59,16 @@ public class Vetor {
 		this.tamanho++;
 		
 		return true;
+	}
+	
+	private void aumentaCapacidade(){
+		if (this.tamanho == this.elementos.length){
+			String[] elementosNovos = new String[this.elementos.length * 2];
+			for (int i=0; i<this.elementos.length; i++){
+				elementosNovos[i] = this.elementos[i];
+			}
+			this.elementos = elementosNovos;
+		}
 	}
 	
 	public String busca(int posicao) {
