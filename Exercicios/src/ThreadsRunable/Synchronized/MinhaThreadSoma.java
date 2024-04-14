@@ -12,6 +12,7 @@ public class MinhaThreadSoma implements Runnable {
 		new Thread(this, nome).start();
 		//Thread t = new Thread(this, nome);
 		//t.start();
+		//????
 	}
 
 	@Override
