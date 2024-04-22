@@ -5,8 +5,8 @@ public class ModificandoLetras {
 		
 		String teste = "Teste";
 		
-		String testeMinusc = teste.toLowerCase();
-		String testeMaisc = teste.toUpperCase();
+		String testeMinusc = teste.toLowerCase();//muda todos caracter em minusculo
+		String testeMaisc = teste.toUpperCase();//muda todos caracter para maiusculo
 
 		System.out.println(testeMinusc);
 		System.out.println(testeMaisc);
