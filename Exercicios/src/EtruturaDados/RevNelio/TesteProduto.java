@@ -1,8 +1,6 @@
-package EtruturaDados.RevNelio.teste;
+package EtruturaDados.RevNelio;
 
 import java.util.Scanner;
-
-import EtruturaDados.RevNelio.Produto;
 
 public class TesteProduto {
 
